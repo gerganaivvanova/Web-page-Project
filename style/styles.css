@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+@import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 85%;
+  background-image: url(../images/education-process.jpg);
+  display: block;
+  position: absolute;
+  opacity: 0.1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-line {
+  display: flex;
+  background: white;
+  border: 1px solid lightgray;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin: 0 56px;
+  box-shadow: 1px 1px 10px -3px black;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.nav-line .logo img {
+  width: 90%;
+  margin-left: 10px;
+}
+
+#hamitems a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: #525F6E;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover {
+    background: #42ABF8;
+  }
+}
+
+#hamnav label {
+  display: inline-block;
+  color: white;
+  background: #42ABF8;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  #hamnav label {
+    display: none;
+  }
+}
+
+#hamitems {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  #hamitems {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+#hamnav input:checked ~ #hamitems {
+  display: block;
+}
+
+#hamburger {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  #hamnav {
+    width: 100%;
+    background: white;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin: 0 56px;
+    box-shadow: 1px 1px 10px -3px black;
+  }
+}
+
+.nav-line-menu {
+  list-style-type: none;
+}
+
+.nav-line-menu .nav-line-menu-item a {
+  text-decoration: none;
+  color: #525F6E;
+}
+
+.nav-line-menu .nav-line-menu-item a:hover {
+  border-top: 2px solid #42ABF8;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 50px 10px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.intro .intro-content {
+  background: #29394B;
+  color: white;
+  border-radius: 10px;
+  padding: 12px 25px 17px;
+  box-shadow: 1px 5px 16px -8px black;
+}
+
+.intro .intro-disclaimer {
+  flex-basis: 100%;
+  padding: 0px 65px;
+  font-style: italic;
+  color: #4D5969;
+}
+
+.diploma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diploma .diploma-title {
+  color: #4D5969;
+  letter-spacing: 1;
+}
+
+.diploma .diploma-text {
+  color: #4D5969;
+  background: #F4F5F7;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.diploma .diploma-disclaimer {
+  color: #4D5969;
+  padding: 0 10px;
+}
+
+.swiper {
+  width: 90%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.caroussel-button {
+  margin: 10px;
+  padding: 10px 25px;
+  border: 1px solid #42ABF8;
+  border-radius: 10px;
+  background: none;
+  font-weight: bold;
+  color: #42ABF8;
+  text-transform: uppercase;
+}
+
+.caroussel-button:hover {
+  background: #42ABF8;
+  color: white;
+}
+
+.cta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/sign-up-prompt-background.jpg);
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  padding: 35px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 600px) {
+  .cta {
+    width: 95%;
+    border-radius: 10px;
+  }
+}
+
+.btn {
+  padding: 10px 25px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btn::before {
+  content: "";
+  height: 10px;
+  width: 1px;
+  color: white;
+}
+
+.btn:hover {
+  background: white;
+  color: #42ABF8;
+}
+
+.footer {
+  margin-top: 5px;
+}
+
+.footer::before {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  background: black;
+  position: absolute;
+}
+
+.footer .footer-info {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.scrollToTopBtn {
+  font-size: 60px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+  display: none;
+}

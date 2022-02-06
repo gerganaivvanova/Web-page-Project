@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Ewave Project</title>
+</head>
+
+<body>
+    <header>
+        <section class="nav-line">
+            <article class="logo">
+                <img src="./images/logo-header.jpg" alt="Online Shop Logo">
+            </article>
+            <nav id="hamnav">
+                <label id="hamnavlabel" for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger" />
+
+                <ul class="nav-line-menu" id="hamitems">
+                    <li class="nav-line-menu-item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="nav-line-menu-item">
+                        <a href="#">Certificates</a>
+                    </li>
+                    <li class="nav-line-menu-item">
+                        <a href="#">Careers</a>
+                    </li>
+                    <li class="nav-line-menu-item">
+                        <a href="#">Fees</a>
+                    </li>
+                    <li class="nav-line-menu-item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="intro">
+            <article class="intro-content">
+                <h2 class="intro-content-text">My Project Description</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eum maiores, obcaecati iure qui
+                    eveniet id voluptates aperiam ex debitis voluptatum quos exercitationem libero, dicta, dolorum
+                    architecto. Eos, harum praesentium.</p>
+            </article>
+            <p class="intro-disclaimer">This is my project for Ewave.</p>
+        </section>
+    </header>
+    <main class="diploma">
+        <h2 class="diploma-title">Diploma</h2>
+        <article class="diploma-text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iste rem vero magnam ex aspernatur
+                repellendus assumenda dignissimos, velit dolorem veritatis obcaecati itaque omnis molestiae quo eveniet
+                ut animi provident.</p>
+            <p class="diploma-disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </article>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/blue-certificate.jpg" alt="Blue Certificate"></div>
+                <div class="swiper-slide"><img src="./images/dark-certificate.jpg" alt="Dark Certificate"></div>
+                <div class="swiper-slide"><img src="./images/blue-certificate.jpg" alt="Blue Certificate"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <button class="caroussel-button">Load more...</button>
+
+        <article class="cta">
+            <h2 class="cta-title">Explore our Educational Program</h2>
+            <p class="cta-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <section class="cta-btns">
+                <button class="btn">APPLY</button>
+                <button class="btn">CURRICULUM</button>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <button class="scrollToTopBtn">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+        </button>
+        <p class="footer-info"> All rights reserved.</p>
+    </footer>
+    <script src="./services/scrollService.js"></script>
+    <script src="./services/fetchApi.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                },
+            },
+            createElements: true,
+        });
+    </script>
+</body>
+
+</html>
